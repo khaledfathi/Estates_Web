@@ -1,0 +1,42 @@
+.pageHeader{
+    background-color: red;
+}
+.nav{
+    background-color: cyan;
+}
+.content{
+    background-color: black;
+}
+.footer{
+    background-color: gray;
+}
+
+.queries{
+    display: block;
+    background-color: #328;
+}
+.transaction{
+    display: block;
+    background-color: #937;
+}
+.waterInvoice{
+    display: block;
+    background-color: #fd7;
+}
+.registers{
+    display: block;
+    background-color: #a6f;
+}
+
+.registers .estatesRegister{
+    display: block;
+    background-color: #f5e;
+}
+.registers .renterRegister{
+    display: block;
+    background-color: #f5e;
+}
+.receiptRelease{
+    display: block;
+    background-color: #085;
+}

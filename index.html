@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="estates web app">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ادارة العقارات</title>                            
+    </head>
+    <body>
+        <div class="pageHeader">
+            <h1>إدارة العقارات</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>استعلام</li>
+                <li>معاملة مالية</li>
+                <li>فاتورة مياة</li>
+                <li>السجلات</li>                
+                <li>اصدار ايصال</li>
+                <li>تعديل</li>
+                <li>اعدادات</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="queries">
+                <form>
+                    <label for="">العقار</label>
+                    <select name="" id="">
+                        <option value="">عقار 1</option>
+                        <option value="">عقار 2</option>
+                    </select>
+                    <label for="">تقرير</label>
+                    <select name="" id="">
+                        <option value="">مديونية الايجار</option>
+                        <option value="">مديونية المياة</option>
+                        <option value="">كل المديونيات</option>
+                        <option value="">كل المبلغ الفعلى</option>
+                        <option value="">اجمالى المبالغ المحصلة عن فترة </option>
+                    </select>
+
+                    <label for="">عن الفترة</label>
+                    <input type="date">
+                    <label for="">الى</label>
+                    <input type="date">
+                    
+                    <input type="checkbox">
+                    <label for="">تحديد مستأجر</label>
+                    
+                    <select name="" id="">
+                        <option value="">محمد على </option>
+                        <option value="">جمال سيد</option>
+                        <option value="">ابراهيم امير</option>                        
+                    </select>
+                    <input type="submit" value="أستعلام">
+                </form>
+                <hr>                
+            </div>
+
+            <div class="transaction">
+                <form>
+                    <input type="checkbox" name="" id="">
+                    <label for=""> اضافة مبلغ بدون تصنيف</label>
+
+                    <label for="">اسم المستأجر</label>
+                    <select name="" id="">
+                        <option value="">محمد على </option>
+                        <option value="">جمال سيد</option>
+                        <option value="">ابراهيم امير</option>                        
+                    </select>
+
+                    <label for="">تاريخ العميلة</label>
+                    <input type="date">
+                    
+                    <label for="">المبلغ المدفوع</label>
+                    <input type="number">
+                    <label for="">القيمة المتبقية</label>
+                    <input type="number">
+                    <div>
+                        <input type="radio">
+                        <label for="" >ايداع</label>
+                        <input type="radio">
+                        <label for="">سحب</label>
+                    </div>
+
+                    <label for="">نوع المعاملة</label>
+                    <select name="" id="">
+                        <option value="">سداد ايجار</option>
+                        <option value="">سداد مياة</option>
+                        <option value="">سداد اعمال صيانة/طوارئ</option>
+                        <option value="">غير مصنف</option>                        
+                    </select>
+                    <label for="">مدفوعة عن شهر</label>
+                    <select name="" id="">
+                        <option value="">1- يناير</option>
+                        <option value="">2- فبراير</option>
+                        <option value="">3- مارس</option>
+                        <option value="">4- ابريل</option>
+                        <option value="">5- مايو</option>
+                        <option value="">6- يونيو</option>
+                        <option value="">7- يوليو</option>
+                        <option value="">8- اغسطس</option>
+                        <option value="">9- سبتمبر</option>
+                        <option value="">10- اكتوبر</option>
+                        <option value="">11- نوفمبر</option>
+                        <option value="">12- ديسمبر</option>
+                    </select>
+                    <label for="">سنة</label>
+                    <input type="number">                    
+                    <label for="">تفاصيل اخرى</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>                    
+                    <input type="submit" value="حفظ">                                        
+                </form>                
+            </div>
+
+        </div>
+
+        <div class="waterInvoice">
+            <form>
+                <div>
+                    <input type="radio">
+                    <label for="">تسجيل فاتورة</label>
+                    <input type="radio">
+                    <label for="">تعديل فاتوة</label>
+                    
+                    <label for="">العقار</label>
+                    <select name="" id="">
+                        <option value="">عقار 1</option>
+                        <option value="">عقار 2</option>
+                    </select>
+                    
+                    <label for="">عن شهر</label>
+                    <select name="" id="">
+                        <option value="">1- يناير</option>
+                        <option value="">2- فبراير</option>
+                        <option value="">3- مارس</option>
+                        <option value="">4- ابريل</option>
+                        <option value="">5- مايو</option>
+                        <option value="">6- يونيو</option>
+                        <option value="">7- يوليو</option>
+                        <option value="">8- اغسطس</option>
+                        <option value="">9- سبتمبر</option>
+                        <option value="">10- اكتوبر</option>
+                        <option value="">11- نوفمبر</option>
+                        <option value="">12- ديسمبر</option>
+                    </select>
+                    <label for="">سنة</label>
+                    <input type="number">
+                    <label for="">قيمة الفاتورة</label>                    
+                    <input type="submit" value="حفظ">
+                    <input type="submit" value="حذف">
+                </div>                
+            </form>
+        </div>
+
+        <div class="registers">
+            <div class = "estatesRegister">
+                <form action="">
+                    <label for="">العقار</label>
+                    <select name="" id="">
+                        <option value="">عقار 1</option>
+                        <option value="">عقار 2</option>
+                    </select>
+                    <label for="">نوع العين المؤجرة</label>
+                    <select name="" id="">
+                        <option value="">شقة</option>
+                        <option value="">محل</option>
+                    </select>
+                    <label for="">رقم الوحدة (شقة)</label>
+                    <input type="number" name="" id="">
+                    
+                                    
+                    <label for="">اسم المستأجر</label>
+                    <select name="" id="">
+                        <option value="">محمد على </option>
+                        <option value="">جمال سيد</option>
+                        <option value="">ابراهيم امير</option>                        
+                    </select>
+                    <label for="">الرقم القومى</label>
+                    <input type="number">
+                    <label for="">تليفون</label>
+                    <input type="text">
+                    <label for="">قيمة الايجار</label>
+                    <input type="number">
+                    <label for="">تليفون</label>
+                    <input type="text">
+                    <label for="">تاريخ العقد</label>
+                    <input type="date">
+                    <label for="">تاريخ انتهاء العقد</label>
+                    <input type="date">
+                    <label for="">نوع العقد</label>
+                    <select name="" id="">                    
+                        <option value="">ايجار جديد</option>
+                        <option value="">ايجار قديم</option>                        
+                    </select>
+                    <label for="">نسبة سداد المياة</label>
+                    <input type="number" name="" id="">
+                    <label for="">اخر ايجار مسدد</label>
+                    <select name="" id="">
+                        <option value="">1- يناير</option>
+                        <option value="">2- فبراير</option>
+                        <option value="">3- مارس</option>
+                        <option value="">4- ابريل</option>
+                        <option value="">5- مايو</option>
+                        <option value="">6- يونيو</option>
+                        <option value="">7- يوليو</option>
+                        <option value="">8- اغسطس</option>
+                        <option value="">9- سبتمبر</option>
+                        <option value="">10- اكتوبر</option>
+                        <option value="">11- نوفمبر</option>
+                        <option value="">12- ديسمبر</option>
+                    </select>
+                    <label for="">سنة</label>
+                    <input type="number">
+                    <input type="submit" value="حفظ">
+                </form>
+            </div>
+            <div class="renterRegister">
+                <form >
+                    <label for="">اسم رمزى للعقار</label>
+                    <input type="text">
+                    <label for="">اسم المالك</label>
+                    <input type="text">
+                    <label for="">عنوان العقار</label>
+                    <input type="text">
+                    <label for="">عدد الطوابق</label>
+                    <input type="number">
+                    <label for="">عدد الشقق</label>
+                    <input type="number">
+                    <label for="">عدد المحلات</label>
+                    <input type="number">
+                    <label for="">تفاصيل اخرى</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="حفظ">
+                </form>                
+            </div>
+        </div>
+
+        <div class="receiptRelease">
+            <form action="">
+                <label for="">العقار</label>            
+                <select name="" id="">
+                    <option value="">عقار 1</option>
+                    <option value="">عقار 2</option>
+                </select>
+                <label for="">اسم المستاجر</label>            
+                <select name="" id="">
+                    <option value="">محمد على </option>
+                    <option value="">جمال سيد</option>
+                    <option value="">ابراهيم امير</option>                        
+                </select>
+                <label for="">سنة</label>
+                <input type="number">
+                <label for="">عن شهر</label>
+                <select name="" id="">
+                    <option value="">1- يناير</option>
+                    <option value="">2- فبراير</option>
+                    <option value="">3- مارس</option>
+                    <option value="">4- ابريل</option>
+                    <option value="">5- مايو</option>
+                    <option value="">6- يونيو</option>
+                    <option value="">7- يوليو</option>
+                    <option value="">8- اغسطس</option>
+                    <option value="">9- سبتمبر</option>
+                    <option value="">10- اكتوبر</option>
+                    <option value="">11- نوفمبر</option>
+                    <option value="">12- ديسمبر</option>
+                </select>
+                <input type="submit" value="اصدار ايصال">
+            </form>            
+        </div>
+
+        <div class="footer">
+
+        </div>
+        <script src="js/js.js"></script>
+    </body>
+</html>
+
+
+
+
