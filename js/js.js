@@ -1,3 +1,4 @@
+/*---global var---*/
 const navList = document.querySelector("#navList"); 
 const queries = document.querySelector("#queries"); 
 const transaction = document.querySelector("#transaction"); 
@@ -5,7 +6,9 @@ const waterInvoice = document.querySelector("#waterInvoice");
 const registers = document.querySelector("#registers"); 
 const receiptRelease = document.querySelector("#receiptRelease"); 
 
+/*---NAV---*/
 
+/*events functions*/
 function navShowHideSection(itemNumber){
     if (itemNumber != undefined){
         itemNumber = 1 << itemNumber-1;//convert to 1 bit 
@@ -18,8 +21,7 @@ function navShowHideSection(itemNumber){
         waterInvoice.style.setProperty("display" ,state[2]);
         registers.style.setProperty("display" ,state[3]);    
         receiptRelease.style.setProperty("display" ,state[4]);
-    }
-    
+    } 
 }
 
 function navSelectedStyle(itemNumber){
@@ -35,7 +37,10 @@ function navSelectedStyle(itemNumber){
     }
 }
 
+/*events*/
 navList.addEventListener('click', (event)=>{     
     navShowHideSection(event.target.value);
     navSelectedStyle(event.target.value);
 }); 
+
+/**********************/

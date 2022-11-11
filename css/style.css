@@ -145,8 +145,215 @@ body{
     right: 30%;
     top:100%
 }
+/*-----*/
 
+/*transaction*/
+.transaction{
+    display: none;
+}
+.transaction > form{
+    display: grid;    
+    grid-template-columns:  repeat(1, 12%) repeat(9, 10%);
+    grid-template-rows: repeat(10,10%);
+    column-gap: 20px;
+    row-gap: 20px;
+    user-select: none;
+    padding: 20px;
+}
+.transaction >form > select ,
+.transaction >form > input[type="date"] ,
+.transaction >form > label,
+.transaction >form > div > label{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
 
+/*grid row 1*/
+.transaction .c1r1{    
+    grid-column: 1 /span 3 ;
+    grid-row: 1;
+}
+/*grid row 2*/
+.transaction .c1r2{
+    grid-column: 1 ;
+    grid-row: 2;
+}
+.transaction .c2r2{
+    grid-column: 2/ span 2 ;
+    grid-row: 2;
+}
+.transaction .c3r2{
+    grid-column: 4 ;
+    grid-row: 2;
+}
+.transaction .c4r2{
+    grid-column: 5/ span 2 ;
+    grid-row: 2;
+}
+/*grid row 3*/
+.transaction .c1r3{
+    grid-column: 1 ;
+    grid-row: 3;
+}
+.transaction .c2r3{
+    grid-column: 2/span 2 ;
+    grid-row: 3;
+}
+
+/*grid row 4*/
+.transaction .c1r4{
+    grid-column: 1 ;
+    grid-row: 4;
+}
+.transaction .c2r4{
+    grid-column: 2 / span 2 ;
+    grid-row: 4;
+}
+.transaction .c3r4{
+    grid-column: 4 ;
+    grid-row: 4;
+}
+.transaction .c4r4{
+    grid-column: 5 / span 2 ;
+    grid-row: 4;
+}
+/*grid row 5*/
+.transaction .c1r5{
+    grid-column: 1/span 6 ;
+    grid-row: 5;
+}
+.transaction .c1r5 > label{
+    margin-left: 25px;
+}
+/*grid row 6*/
+.transaction .c1r6{
+    grid-column: 1 ;
+    grid-row: 6;
+}
+.transaction .c2r6{
+    grid-column: 2 / span 2 ;
+    grid-row: 6;
+}
+/*grid row 7*/
+.transaction .c1r7{
+    grid-column: 1 ;
+    grid-row: 7;
+}
+.transaction .c2r7{
+    grid-column: 2 / span 2 ;
+    grid-row: 7;
+}
+.transaction .c3r7{
+    grid-column: 4 ;
+    grid-row: 7;
+}
+.transaction .c4r7{
+    grid-column: 5 / span 2 ;
+    grid-row: 7;
+}
+/*grid row 8*/
+.transaction .c1r8{
+    grid-column: 1 ;
+    grid-row: 8;
+    line-height: 100px;
+}
+.transaction .c2r8{
+    grid-column: 2/span 3 ;
+    grid-row: 8;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100px;    
+    max-height: 100px;
+    min-height: 100px;
+}
+/*grid row 8*/
+.transaction .c1r9{
+    grid-column: 2 / span 3 ;
+    grid-row: 9;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 100%; 
+    right: 50%;
+}
+/*-----*/
+
+/*waterInvoice*/
+.waterInvoice{
+    display: none;
+    padding: 20px;
+}
+.waterInvoice >form > select ,
+.waterInvoice >form > input[type="date"] ,
+.waterInvoice >form > label,
+.waterInvoice >form > div > label{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+.waterInvoice >form{
+    display: grid;    
+    grid-template-columns:  repeat(1, 9%) repeat(2, 10%) repeat(1, 5%) repeat(6, 10%);
+    grid-template-rows: repeat(10,10%);
+    column-gap: 20px;
+    row-gap: 20px;
+    user-select: none;
+}
+/*grid row 1*/
+.waterInvoice .c1r1{
+    grid-column: 1 / span 3 ;
+    grid-row: 1;
+}
+/*grid row 2*/
+.waterInvoice .c1r2{
+    grid-column: 1 ;
+    grid-row: 2;
+}
+.waterInvoice .c2r2{
+    grid-column: 2/ span 2 ;
+    grid-row: 2;
+}
+/*grid row 3*/
+.waterInvoice .c1r3{
+    grid-column: 1;
+    grid-row: 3;
+}
+.waterInvoice .c2r3{
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+.waterInvoice .c3r3{
+    grid-column: 4;
+    grid-row: 3;
+}
+.waterInvoice .c4r3{
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}
+/*grid row 4*/
+.waterInvoice .c1r4{
+    grid-column: 1;
+    grid-row: 4;
+}
+.waterInvoice .c2r4{
+    grid-column: 2 / span 2;
+    grid-row: 4;
+}
+/*grid row 5*/
+.waterInvoice .c1r5{
+    grid-column: 2/ span 4;
+    grid-row: 5;
+}
+.c1r5 > input[type="submit"]{    
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 100%;
+    right : 30%;
+    margin-left: 30px;  
+}
 /*****************/
 
 /*footer*/
@@ -156,14 +363,10 @@ body{
 }
 /*****************/
 
+
 /*****************/
 
-.transaction{
-    display: none;
-}
-.waterInvoice{
-    display: none;
-}
+
 .registers{
     display: none;
 }
